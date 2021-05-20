@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <style>
+  body{
+    overflow: hidden;
+    
+  }
+#diva{
+  width: 100vh;
+  height: 100vh;
+  top: 0;
+bottom: 0;
+
+
+}
+
+</style>
+
+  <script>
+var imagen = ["artbo (1).jpg",
+              "artbo (2).jpg",
+              "artbo (3).jpg",
+              "artbo (4).jpg",
+              "artbo (5).jpg",
+              "artbo (6).jpg",
+              "artbo (7).jpg",
+              "artbo (8).jpg",
+              "artbo (9).jpg",
+              "artbo (10).jpg",
+              "artbo (11).jpg",
+              "artbo (12).jpg",
+              "artbo (13).jpg",
+              "artbo (14).jpg",
+              "artbo (15).jpg",
+              "artbo (16).jpg",
+              "artbo (17).jpg",
+              "artbo (18).jpg",
+              "artbo (19).jpg",
+              "artbo (20).jpg",
+              "artbo (21).jpg",
+              "artbo (22).jpg",
+              "artbo (23).jpg",
+              "artbo (24).jpg",
+              "artbo (25).jpg",
+              "artbo (26).jpg",
+              "artbo (27).jpg",
+              "artbo (28).jpg",
+              "artbo (29).jpg",
+              "artbo (30).jpg",
+              "artbo (31).jpg",
+              "artbo (32).jpg",
+              "artbo (33).jpg",
+              "artbo (34).jpg",
+              "artbo (35).jpg",
+              "artbo (36).jpg",
+              "artbo (37).jpg",
+              "artbo (38).jpg",
+              "artbo (39).jpg",
+              "artbo (40).jpg",
+              "artbo (41).jpg",
+              "artbo (42).jpg",
+              "artbo (43).jpg",
+              "artbo (44).jpg",
+              "artbo (45).jpg",
+              "artbo (46).jpg",
+              "artbo (47).jpg",
+              "artbo (48).jpg",
+              "artbo (49).jpg",
+              "artbo (50).jpg",
+              "artbo (51).jpg",
+              "artbo (52).jpg",
+              "artbo (53).jpg",
+              "artbo (54).jpg",
+              "artbo (55).jpg",
+              "artbo (56).jpg",
+              "artbo (57).jpg",
+              "artbo (58).jpg",
+              "artbo (59).jpg",
+              "artbo (60).jpg",
+              "artbo (61).jpg",
+              "artbo (62).jpg",
+              "artbo (63).jpg",
+              "artbo (64).jpg",
+              "artbo (65).jpg",
+              "artbo (66).jpg",
+              "artbo (67).jpg",
+              "artbo (68).jpg",
+              "artbo (69).jpg",
+              "artbo (70).jpg",
+              "artbo (71).jpg",
+              "artbo (72).jpg",
+              "artbo (73).jpg",
+              "artbo (74).jpg",
+              "artbo (75).jpg",
+              "artbo (76).jpg",
+              "artbo (77).jpg",
+              "artbo (78).jpg",
+              "artbo (79).jpg",
+              "artbo (80).jpg",
+              "artbo (81).jpg",
+              "artbo (82).jpg",
+              "artbo (83).jpg",
+              "artbo (84).jpg",
+              "artbo (85).jpg",
+              "artbo (86).jpg",
+              "artbo (87).jpg",
+              "artbo (88).jpg",
+              "artbo (89).jpg",
+              "artbo (90).jpg",
+              "artbo (91).jpg",
+              "artbo (92).jpg",
+              "artbo (93).jpg",
+              "artbo (94).jpg",
+              "artbo (95).jpg",
+              "artbo (96).jpg",
+              "artbo (97).jpg",
+              "artbo (98).jpg",
+              "artbo (99).jpg",
+              "artbo (100).jpg",
+              "artbo (101).jpg",
+              "artbo (102).jpg",
+              "artbo (103).jpg",
+              "artbo (104).jpg",
+              "artbo (105).jpg",
+              "artbo (106).jpg",
+              "artbo (107).jpg",
+              "artbo (108).jpg",
+              "artbo (109).jpg",
+              "artbo (110).jpg",
+              "artbo (111).jpg",
+              "artbo (112).jpg",
+              "artbo (113).jpg",
+              "artbo (114).jpg",
+              "artbo (115).jpg",
+              "artbo (116).jpg",
+              "artbo (117).jpg",
+              "artbo (118).jpg",
+              "artbo (119).jpg",
+              "artbo (120).jpg",
+              "artbo (121).jpg",
+              "artbo (122).jpg",
+              "artbo (123).jpg",
+              "artbo (124).jpg",
+              "artbo (125).jpg",
+              "artbo (126).jpg",
+              "artbo (127).jpg",
+              "artbo (128).jpg",
+              "artbo (129).jpg",
+              "artbo (130).jpg",
+              "artbo (131).jpg",
+              "artbo (132).jpg",
+              "artbo (133).jpg",
+              "artbo (134).jpg",
+              "artbo (135).jpg",
+              "artbo (136).jpg",
+              "artbo (137).jpg",
+              "artbo (138).jpg",
+              "artbo (139).jpg",
+              "artbo (140).jpg",
+              "artbo (141).jpg",
+              "artbo (142).jpg",
+              "artbo (143).jpg",
+              "artbo (144).jpg",
+              "artbo (145).jpg",
+              "artbo (146).jpg",
+              "artbo (147).jpg",
+              "artbo (148).jpg",
+              "artbo (149).jpg",
+              "artbo (150).jpg",
+              "artbo (151).jpg",
+              "artbo (152).jpg",
+              "artbo (153).jpg",
+              "artbo (154).jpg",
+              "artbo (155).jpg",
+              "artbo (156).jpg",
+              "artbo (157).jpg",
+              "artbo (158).jpg",
+              "artbo (159).jpg",
+              "artbo (160).jpg",
+              "artbo (161).jpg",
+              "artbo (162).jpg",
+              "artbo (163).jpg",
+              "artbo (164).jpg",
+              "artbo (165).jpg",
+              "artbo (166).jpg",
+              "artbo (167).jpg",
+              "artbo (168).jpg",
+              "artbo (169).jpg",
+              "artbo (170).jpg",
+              "artbo (171).jpg",
+              "artbo (172).jpg",
+              "artbo (173).jpg",
+              "artbo (174).jpg",
+              "artbo (175).jpg",
+              "artbo (176).jpg",
+              "artbo (177).jpg",
+              "artbo (178).jpg",
+              "artbo (179).jpg",
+              "artbo (180).jpg",
+              "artbo (181).jpg",
+              "artbo (182).jpg",
+              "artbo (183).jpg",
+              "artbo (184).jpg",
+              "artbo (185).jpg",
+              "artbo (186).jpg",
+              "artbo (187).jpg",
+              "artbo (188).jpg",
+              "artbo (189).jpg",
+              "artbo (190).jpg",
+              "artbo (191).jpg",
+              "artbo (192).jpg",
+              "artbo (193).jpg",
+              "artbo (194).jpg",
+              "artbo (195).jpg",
+              "artbo (196).jpg",
+              "artbo (197).jpg",
+              "artbo (198).jpg",
+              "artbo (199).jpg",
+              "artbo (200).jpg",
+              "artbo (201).jpg",
+              "artbo (202).jpg",
+              "artbo (203).jpg",
+              "artbo (204).jpg",
+              "artbo (205).jpg",
+              "artbo (206).jpg",
+              "artbo (207).jpg",
+              "artbo (208).jpg",
+              "artbo (209).jpg",
+              "artbo (210).jpg",
+              "artbo (211).jpg",
+              "artbo (212).jpg",
+              "artbo (213).jpg",
+              "artbo (214).jpg",
+              "artbo (215).jpg",
+              "artbo (216).jpg",
+              "artbo (217).jpg",
+              "artbo (218).jpg",
+              "artbo (219).jpg",
+              "artbo (220).jpg",
+              "artbo (221).jpg",
+              "artbo (222).jpg",
+              "artbo (223).jpg" 
+
+                    ]
+
+         var contador = 0; 
+
+        
+
+    function myFunction(){
+
+    contador = contador + 1 ;
+
+    console.log(" icontador " + contador);
+
+    if (contador >= imagen.length)
+    {
+      contador = 0;
+    }
+    var img = imagen[contador];
+
+    var e = e || window.event;
+
+    var pageX = e.pageX;
+    var pageY = e.pageY;
+
+
+            var elem = document.createElement("div");
+             elem.style.position = "absolute";
+            
+
+             elem.style.top = (e.clientY + document.body.scrollTop + document.documentElement.scrollTop) + 'px';
+             elem.style.left = (e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft) + 'px'; 
+
+          console.log(" imagen es " + img);
+                        
+             var elem1 = document.createElement("img");
+                   elem1.setAttribute("src", img);
+                   elem.appendChild(elem1);
+
+    
+             
+
+             document.body.appendChild(elem);
+        }
+
+
+
+  </script>
+</head>
+
+<body onmousemove="myFunction()">
+
+<div id="diva">
+
+  
+  
+</div>
+</body>
+
+</html>
